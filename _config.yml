@@ -22,7 +22,7 @@ title: Part Decomposition for One-Shot Skill Transfer
 email: rory_thompson@brown.edu
 description: One-shot transfer of robot manipulation skills by composing objectives over object parts.
 #baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rthomp17.github.io/partwarping.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # # Build settings
 # theme: cayman
