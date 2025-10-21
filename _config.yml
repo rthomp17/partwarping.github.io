@@ -21,7 +21,7 @@
 title: Part Decomposition for One-Shot Skill Transfer
 email: rory_thompson@brown.edu
 description: One-shot transfer of robot manipulation skills by composing objectives over object parts.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "https://rthomp17.github.io/partwarping.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # # Build settings
@@ -29,11 +29,11 @@ url: "https://rthomp17.github.io/partwarping.github.io/" # the base hostname & p
 # plugins:
 #   - jekyll-feed
 markdown: kramdown
-remote_theme: pages-themes/cayman@v0.2.0
+
 plugins:
 - jekyll-remote-theme
 
-
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Exclude from processing.
 # The following items will not be processed, by default.
