@@ -17,8 +17,44 @@
 
 <p>
 </p>
+
+<style>
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+      padding: 0 18px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+    }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+</style>
+<div>
+<button type="button" class="collapsible">Click for Interactive Visualization</button>
+
+<iframe  class="content" src="https://rthomp17.github.io/test_dash_app_hosting/" width="100%" height="800px" style="zoom: 0.6;"> </iframe>
+
+
+</div>
 Using a decomposed object representation, parts-based shape warping generalizes a manipulation skill to a wide range of object geometries from very few training
 examples.  Above: results on a simulated mug-on-rack task, with a subsample of tested mugs enlarged for comparison.
+
 
 Successful skill adaptation requires the ability to both identify the features of a novel object that are salient for a given skill, and to successfully adapt that skill policy to the novel object using those features. How can we better represent and condition on objects' geometric features to enable skill transfer to a wider variety of objects?
 
@@ -38,6 +74,7 @@ This improves transfer over monolithic representations. Here are some specific e
 ![](pictures/whole_fail.png)
 
 
+
 On the real robot, We utilize existing segmentation and semantic feature models to extract segmented point cloud views of each part, from which we can infer each part’s shape and pose, as well as an estimated collision mesh for motion planning.
 
 ![](pictures/reconstruction_from_cam.png)
@@ -50,5 +87,23 @@ And demonstrate improvement over monolithic object modeling on three different t
 We also show the ability to do cross object generalization, by generalizing the skill from teapots to watering cans that share the same semantic parts.
 
 ![](pictures/watering_can.png)
+
+<script>
+
+let coll = document.getElementsByClassName("collapsible");
+              
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = "800px";
+    }
+  });
+}
+
+</script>
 
 

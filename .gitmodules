@@ -1,0 +1,3 @@
+[submodule "test_dash_app_hosting"]
+	path = test_dash_app_hosting
+	url = ./test_dash_app_hosting
