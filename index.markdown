@@ -69,10 +69,11 @@ Motivated by examples of improved transfer from compositional modeling,we explor
 
 This decomposition improves transfer in two ways; first, it disentangles the learned feature representation of different parts from the relationship between those parts, which enables more accurate shape reconstruction and feature identification. And second, it enables skill generalization to a wider range of objects by modeling the relationships between object parts independently, adapting effectively when those part relationships change. 
 
+![](pictures/shape_reconstruction.gif)
+
 This improves transfer over monolithic representations. Here are some specific examples of improvements: 
 
 ![](pictures/whole_fail.png)
-
 
 
 On the real robot, We utilize existing segmentation and semantic feature models to extract segmented point cloud views of each part, from which we can infer each part’s shape and pose, as well as an estimated collision mesh for motion planning.

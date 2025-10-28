@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Part Decomposition for One-Shot Skill Transfer
+title: One-Shot Cross-Geometry Skill Transfer through Part Decomposition
 email: rory_thompson@brown.edu
 description: One-shot transfer of robot manipulation skills by composing objectives over object parts.
 baseurl: # the subpath of your site, e.g. /blog
